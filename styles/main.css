@@ -1,0 +1,16 @@
+.contentContainer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    border: 2px dotted red;
+}
+
+.formContainer {
+    border: dotted 2px purple;
+    width: 60%;
+}
+
+.fieldset {
+    display: flex;
+    flex-direction: column;
+}

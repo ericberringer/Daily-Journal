@@ -1,9 +1,10 @@
 <!DOCTYPE html>
+
 <html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Daily Journal</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./styles/main.css">
@@ -14,6 +15,7 @@
                 <img src="" alt="">
             </header>
             <nav></nav>
+            <h2>Daily Journal</h2>
             <section class="contentContainer">
                 <aside class="pastEntries">
                     <ol>
@@ -22,11 +24,28 @@
                 </aside>
                 <div class="formContainer">
                     <form action="" class="form">
-                        <fieldset>
-                            <label for="journalDate">Date of Entry</label>
+                        <fieldset class="dateContainer fieldset">
+                            <label for="journalDate">Date of Entry: </label>
                             <input type="date" name="journalDate" id="journalDate">
-                            <input type="text" name="journalMood" id="journalMood" placeholder="Mood">
-                            <textarea name="journalText" id="journalText" cols="30" rows="10" placeholder="Journal Text"></textarea>
+                        </fieldset>
+                        <fieldset class="conceptContainer fieldset">
+                            <label for="journalConcept">Concepts Covered: </label>
+                            <input type="text" name="journalMood" id="journalMood" placeholder="Enter Concept">
+                        </fieldset>
+                        <fieldset class="journalContainer fieldset">
+                            <label for="journalText">Journal Entry: </label>
+                            <textarea name="journalText" id="journalText" placeholder="You Know What To Do"></textarea>
+                        </fieldset>
+                        <fieldset class="moodContainer fieldset">
+                            <select name="moodDropdown" id="moodDropdown">
+                                <option value="0">Select Your Mood...</option>
+                                <option value="1">Happy</option>
+                                <option value="2">Sad</option>
+                                <option value="3">Indifferent</option>
+                                <option value="3">Angry</option>
+                                <option value="3">Eager</option>
+
+                            </select>
                         </fieldset>
                     </form>
                     <div class="formButton">
@@ -37,6 +56,6 @@
             
             <footer></footer>
         </main>
-        <script src="./scripts/" async defer></script>
+        <script type="module" src="./scripts/main.js>
     </body>
 </html>
